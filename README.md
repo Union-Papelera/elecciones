@@ -6,15 +6,20 @@ Los resultados de las elecciones son proporcionados sin firmar pero también fir
 Para verificar la firma digital seguir estos pasos:
 
 1. Necisitas instalar [GnuPG](https://gnupg.org/ "GnuPG")
-1. Primero descarga nuestra [Clave Pública](https://unionpapelera.ml/assets/docs/clave-pgp.txt)
+1. Primero descarga nuestra [clave PGP pública](https://unionpapelera.ml/assets/docs/clave-pgp.txt "Clave PGP pública")
 1. Ve al directorio donde la has descargado y abre una terminal
 1. Ahora importa nuestra clave pública mediante
 ```bash
 gpg --import clave-pgp.txt
+```
+1. Comprueba que el fingerprint coincida con el [nuestro](https://unionpapelera.ml/assets/docs/fingerprint-clave-pgp.txt "Fingerprint") mediante el comando
+```bash
+gpg --fingerprint gobiernopapelero@mailfence.com
 ```
 2. Descarga el archivo que se encuentra en año/resultados-firmados.md
 3. Ve al directorio donde se ha descargado, abre la terminal y ejecuta
 ```bash
 gpg --verify resultados-firmados.md
 ```
-4. Debería decirte "Firma correcta" o "Good signature"
+4. Debería decirte "Firma correcta" o "Good signature" aunque saldrá un aviso de PRECAUCIÓN si no has tomado medidas para confiar en el camino a nuestra clave.  
+5. Es una buena práctica volver a comprobar que el fingerprint coincida.
