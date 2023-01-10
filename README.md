@@ -12,14 +12,14 @@ Para verificar la firma digital seguir estos pasos:
 ```bash
 gpg --import clave-pgp.txt
 ```
-1. Comprueba que el fingerprint coincida con el [nuestro](https://unionpapelera.ml/assets/docs/fingerprint-clave-pgp.txt "Fingerprint") mediante el comando
+5. Comprueba que el fingerprint coincida con el [nuestro](https://unionpapelera.ml/assets/docs/fingerprint-clave-pgp.txt "Fingerprint") mediante el comando
 ```bash
 gpg --fingerprint gobiernopapelero@mailfence.com
 ```
-2. Descarga el archivo que se encuentra en año/resultados-firmados.md
-3. Ve al directorio donde se ha descargado, abre la terminal y ejecuta
+6. Descarga el archivo que se encuentra en año/resultados-firmados.md
+7. Ve al directorio donde se ha descargado, abre la terminal y ejecuta
 ```bash
 gpg --verify resultados-firmados.md
 ```
-4. Debería decirte "Firma correcta" o "Good signature" aunque saldrá un aviso de PRECAUCIÓN si no has tomado medidas para confiar en el camino a nuestra clave.  
-5. Es una buena práctica volver a comprobar que el fingerprint coincida.
+8. Debería decirte "Firma correcta" o "Good signature" aunque saldrá un aviso de PRECAUCIÓN si no has tomado medidas para confiar en el camino a nuestra clave.  
+9. Es una buena práctica volver a comprobar que el fingerprint coincida.
