@@ -12,7 +12,7 @@ Para verificar la firma digital seguir estos pasos:
 ```bash
 gpg --import clave-pgp.txt
 ```
-5. Comprueba que el fingerprint coincida con el [nuestro](https://unionpapelera.ml/assets/docs/fingerprint-clave-pgp.txt "Fingerprint") mediante el comando
+5. Comprueba que el fingerprint coincida con el [nuestro](https://unionpapelera.ml/assets/docs/fingerprint-de-la-clave-pgp.txt "Fingerprint") mediante el comando
 ```bash
 gpg --fingerprint gobiernopapelero@mailfence.com
 ```
